@@ -1,6 +1,9 @@
+import warnings
 import pickle
 from sklearn.datasets import load_iris
 from sklearn.metrics import accuracy_score
+
+warnings.filterwarnings("ignore", category=UserWarning, module="sklearn")
 
 # Load dataset
 iris = load_iris()
